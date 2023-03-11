@@ -1,19 +1,18 @@
 
-name: Deploy
+# name: .NET
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+# on:
+  # push:
+    # branches: [ "main" ]
+  # pull_request:
+    # branches: [ "main" ]
 
-jobs:
-      
-  Deploy-Dev:
-    name: Deploy Teste
-    runs-on: ubuntu-latest
-    environment: dev
-    needs: CI-Build
-    steps:
-    - name: Teste
-      run: echo '!!! Deploy realizado com sucesso !!!'  
+# jobs:
+  # deploy-dev:
+    # name: Deploy Teste
+    # runs-on: ubuntu-latest
+    # enviroment: dev
+    # needs: build
+    # steps:
+    # - name: Teste
+    # run: echo 'Deploy realizado com sucesso!!!'    

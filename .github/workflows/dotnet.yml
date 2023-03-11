@@ -1,3 +1,5 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
 name: .NET
 
@@ -30,4 +32,12 @@ jobs:
     - name: Test
       run: dotnet test ./CiCdGtActions.API/CiCdGtActions.Tests/CiCdGtActions.Tests.csproj --no-restore --verbosity normal
       
-
+      
+  Deploy-Dev:
+    name: Deploy Teste
+    runs-on: ubuntu-latest
+    environment: dev
+    needs: CI-Build
+    steps:
+    - name: Teste
+      run: echo '!!! Deploy realizado com sucesso !!!'  
