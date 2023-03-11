@@ -28,6 +28,6 @@ jobs:
       run: dotnet restore
       working-directory: ./CiCdGtActions.API
     - name: Build
-      run: dotnet build CiCdGtActions.API.csproj --configuration Release --no-restore
+      run: dotnet build ./CiCdGtActions.API/CiCdGtActions.API.csproj --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
