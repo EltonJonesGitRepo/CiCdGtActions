@@ -30,4 +30,4 @@ jobs:
     - name: Build
       run: dotnet build ./CiCdGtActions.API/CiCdGtActions.API/CiCdGtActions.API.csproj --configuration Release --no-restore
     - name: Test
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet test ./CiCdGtActions.API/CiCdGtActions.API/CiCdGtActions.Tests.csproj --no-restore --verbosity normal
