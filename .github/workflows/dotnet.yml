@@ -24,7 +24,7 @@ jobs:
       run: dotnet --version
     - name: Install dependencies
       run: dotnet restore
-      working-directory: ./CiCdGtActions.API
+      working-directory: ./CiCdGtActions
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
