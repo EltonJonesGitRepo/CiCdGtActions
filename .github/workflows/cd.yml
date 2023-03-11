@@ -1,0 +1,17 @@
+
+name: .NET
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  deploy-dev:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Teste
+    run: echo 'Deploy realizado com sucesso!!!'    
