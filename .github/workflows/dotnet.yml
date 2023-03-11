@@ -39,5 +39,5 @@ jobs:
     environment: dev
     needs: CI-Build
     steps:
-    - name: Teste
+    - name: Mocking Deploy
       run: echo '!!! Deploy realizado com sucesso !!!'  
