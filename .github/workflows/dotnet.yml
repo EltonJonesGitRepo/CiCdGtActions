@@ -25,4 +25,4 @@ jobs:
       working-directory: ./CiCdGtActions.API    
     - name: Test
       run: dotnet test --no-build --verbosity normal
-      working-directory: ./CiCdGtActions.Tests
+      working-directory: Tests
